@@ -1,3 +1,6 @@
+/* jshint esversion: 6 */
+/* jshint node: true */
+
 "use strict";
 
 const Chance = require("chance");
@@ -9,15 +12,15 @@ module.exports = {
 
   generateRandomUser: () => {
     const gender    = chance.gender();
-    const firstName = chance.first({gender: gender});
+    const firstName = chance.first({ gender: gender });
     const lastName  = chance.last();
     const userName  = firstName + " " + lastName;
 
     let userHandle = "@";
     if (Math.random() > 0.5) {
-      let prefix    = chance.prefix({gender: gender});
+      let prefix    = chance.prefix({ gender: gender });
       prefix = prefix.replace(".", "");
-      userHandle += prefix
+      userHandle += prefix;
     }
 
     userHandle += lastName;
@@ -32,7 +35,7 @@ module.exports = {
       small:   `${avatarUrlPrefix}_50.png`,
       regular: `${avatarUrlPrefix}.png`,
       large:   `${avatarUrlPrefix}_200.png`
-    }
+    };
 
     return {
       name: userName,

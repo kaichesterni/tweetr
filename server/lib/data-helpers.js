@@ -1,3 +1,6 @@
+/* jshint esversion: 6 */
+/* jshint node: true */
+
 "use strict";
 
 // Simulates the kind of delay we see with network or filesystem operations
@@ -24,4 +27,4 @@ module.exports = function makeDataHelpers(db) {
     }
 
   };
-}
+};

@@ -1,0 +1,32 @@
+.counter {
+  float: right;
+}
+
+.new-tweet {
+  background-color: #eee;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  display: none;
+  margin: 0 2em;
+  padding: 10px;
+}
+
+.new-tweet-text {
+  padding: 5px;
+  width: 100%;
+}
+
+.new-tweet-title {
+  border-bottom: 1px solid #444;
+  margin: 0;
+  margin-bottom: 0.7em;
+}
+
+.new-tweet-button {
+  border: 1px solid #ccc;
+  background: linear-gradient(#ddd, white);
+}
+
+.warning {
+  color: #f44;
+}

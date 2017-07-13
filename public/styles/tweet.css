@@ -1,0 +1,66 @@
+footer img {
+  opacity: 0;
+}
+
+.tweet:hover {
+  opacity: 1;
+  border: 1px solid #aaa;
+}
+
+.tweet {
+  opacity: 0.6;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 2em;
+  padding: 0.2px 0;
+  z-index: 1;
+}
+
+.tweet header {
+  background-color: #eee;
+  border-radius: 4px 4px 0 0;
+  height: 70px;
+  padding: 10px;
+}
+
+.tweet .avatar {
+  background-color: white;
+  border-radius: 3px;
+  float: left;
+  height: 50px;
+  margin-right: 10px;
+  width: 50px;
+}
+
+.tweet .content {
+  margin: 2em 1em;
+}
+
+.tweet footer {
+  border-top: 1px solid #ddd;
+  font-size: 12px;
+  padding: 10px;
+}
+
+.tweet .handle {
+  bottom: 20px;
+  color: black;
+  float: right;
+  font-size: 13px;
+  opacity: 0.6;
+  position: relative;
+}
+
+.tweet .share {
+  float: right;
+  height: 11px;
+}
+
+.tweet .username {
+  margin: 0;
+  opacity: 0.7;
+}
+
+.tweet .visible {
+  opacity: 1;
+}
