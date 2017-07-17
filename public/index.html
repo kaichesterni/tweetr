@@ -1,76 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Meta Information -->
-    <title>Tweeter - Home Page</title>
 
-    <!-- Encoding -->
-    <meta charset="utf-8">
+<head>
+  <!-- Meta Information -->
+  <title>Tweeter - Home Page</title>
 
-    <!-- Viewport -->
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <!-- Encoding -->
+  <meta charset="utf-8">
 
-    <!-- External CSS -->
-    <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
+  <!-- Viewport -->
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
 
-    <!-- App CSS -->
-    <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
+  <!-- External CSS -->
+  <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
 
-    <!-- Nav CSS -->
-    <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
+  <!-- App CSS -->
+  <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
 
-    <!-- New Tweet CSS -->
-    <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+  <!-- Nav CSS -->
+  <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
 
-    <!-- Tweet CSS -->
-    <link rel="stylesheet" href="/styles/tweet.css" type="text/css" />
+  <!-- New Tweet CSS -->
+  <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
 
-    <!-- jQuery JS -->
-    <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
+  <!-- Tweet CSS -->
+  <link rel="stylesheet" href="/styles/tweet.css" type="text/css" />
 
-    <!-- App JS -->
-    <script type="text/javascript" src="/scripts/app.js"></script>
+  <!-- jQuery JS -->
+  <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
 
-    <!-- Composer Character Counter JS -->
-    <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
+  <!-- App JS -->
+  <script type="text/javascript" src="/scripts/app.js"></script>
 
-    <!-- Share Toggle JS -->
-    <script type="text/javascript" src="/scripts/tweet-hover.js"></script>
+  <!-- Composer Character Counter JS -->
+  <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
 
-    <!-- Fontawesome JS -->
-    <script src="https://use.fontawesome.com/b828bf247e.js"></script>
+  <!-- Share Toggle JS -->
+  <script type="text/javascript" src="/scripts/tweet-hover.js"></script>
 
-    <!-- Composer Toggle JS -->
-    <script type="text/javascript" src="/scripts/toggle-composer.js"></script>
+  <!-- Fontawesome JS -->
+  <script src="https://use.fontawesome.com/b828bf247e.js"></script>
 
-    <!-- Roboto Condensed Font -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,700,700i" rel="stylesheet">
-  </head>
+  <!-- Composer Toggle JS -->
+  <script type="text/javascript" src="/scripts/toggle-composer.js"></script>
 
-  <body>
+  <!-- Roboto Condensed Font -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,700,700i" rel="stylesheet">
+</head>
 
-    <!-- Top nav bar (fixed) -->
-    <nav id="nav-bar">
-      <img class="logo" src="/images/bird.png">
-      <span class="header">Tweeter</span>
-      <button class="composer"><i class="fa fa-pencil-square-o"></i> Compose</button>
-    </nav>
+<body>
 
-    <!-- Page-specific (main) content here -->
-    <main class="container">
-      <section class="new-tweet">
-        <h2 class="new-tweet-title">Compose Tweet</h2>
-        <form method="POST" action="/tweets/">
-          <textarea class="new-tweet-text" name="text" placeholder="What are you humming about?"></textarea>
-          <input class="new-tweet-button" type="submit" value="Tweet">
-          <span class="counter">140</span>
-        </form>
-      </section>
+  <!-- Top nav bar (fixed) -->
+  <nav id="nav-bar">
+    <img class="logo" src="/images/bird.png">
+    <span class="header">Tweeter</span>
+    <button class="composer"><i class="fa fa-pencil-square-o"></i> Compose</button>
+  </nav>
 
-      <section class="tweets">
-      </section>
-    </main>
+  <!-- Page-specific (main) content here -->
+  <main class="container">
+    <section class="new-tweet">
+      <h2 class="new-tweet-title">Compose Tweet</h2>
+      <form method="POST" action="/tweets/">
+        <textarea class="new-tweet-text" name="text" placeholder="What are you humming about?"></textarea>
+        <input class="new-tweet-button" type="submit" value="Tweet">
+        <span class="counter">140</span>
+      </form>
+    </section>
 
-    <footer class="footer">&copy; kaichesterni</footer>
-  </body>
+    <section class="tweets">
+    </section>
+  </main>
+</body>
+
 </html>

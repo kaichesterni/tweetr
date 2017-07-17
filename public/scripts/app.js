@@ -1,9 +1,3 @@
-/*
- * Client-side JS logic goes here
- * jQuery is already loaded
- * Reminder: Use (and do all your DOM work in) jQuery's document ready function
- */
-
 // turn tweet into tweet objects
 function createTweetElement(tweetData) {
   const user = tweetData.user;
@@ -28,7 +22,7 @@ function createTweetElement(tweetData) {
   // get date
   const timeStamp = new Date(tweetData.created_at).toString();
   const date = [];
-  for (var i = 0; i < 15; i ++) {
+  for (var i = 0; i < 15; i++) {
     date.push(timeStamp[i]);
   }
   date.join("");

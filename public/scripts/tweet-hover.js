@@ -1,7 +1,5 @@
-/* jshint esversion: 6 */
-
-$(document).ready(() => {
+window.onload = () => {
   $(".tweet").on("mouseenter mouseleave", () => {
     $(event.currentTarget).find(".share").toggleClass("visible");
   });
-});
+};
